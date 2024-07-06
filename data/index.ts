@@ -203,15 +203,15 @@ export const workExperience = [
 
 export const socialMedia = [
   {
-    id: 1,
-    img: "/git.svg",
-  },
-  {
-    id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
     img: "/link.svg",
+    link: 'https://www.linkedin.com/in/subhendu-kumar-dutta/',
+  },
+  {
+    img: "/git.svg",
+    link: 'https://github.com/Subhendu-Kumar/',
+  },
+  {
+    img: "/twit.svg",
+    link: 'https://x.com/Subhendu_330/',
   },
 ];
