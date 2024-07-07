@@ -6,18 +6,18 @@ import emailjs from "@emailjs/browser";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const form = useRef<HTMLFormElement>();
+  const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_2zpidkv", "template_39yxa5u", form.current, {
+      .sendForm("service_2zpidkv", "template_39yxa5u", form.current!, {
         publicKey: "wqQIfnTRanDOgd-I7",
       })
       .then(
         () => {
-          form.current.reset();
+          form.current!.reset();
           alert("successfully sent the email");
         },
         (error) => {
