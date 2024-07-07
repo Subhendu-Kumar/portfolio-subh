@@ -1,14 +1,14 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, FormEvent } from "react";
 import { socialMedia } from "@/data";
 import emailjs from "@emailjs/browser";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const form = useRef();
+  const form = useRef<HTMLFormElement>();
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     emailjs
