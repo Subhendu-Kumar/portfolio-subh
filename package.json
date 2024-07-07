@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@react-three/drei": "^9.108.1",
     "@react-three/fiber": "^8.16.8",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.13",
     "mini-svg-data-uri": "^1.4.4",

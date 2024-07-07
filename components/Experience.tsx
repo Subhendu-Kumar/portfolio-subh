@@ -2,16 +2,16 @@ import { workExperience } from "@/data";
 import React from "react";
 import { Button } from "./ui/moving-border";
 
-const Experence = () => {
+const Experience = () => {
   return (
-    <div className="py-20 w-full h-auto" id="testimonials">
+    <div className="py-20 w-full h-auto">
       <h1 className="heading text-purple">My Experience !</h1>
       <div className="w-full mt-10 grid lg:grid-cols-4 grid-cols-1 gap-8">
         {workExperience.map((card, index) => (
           <Button
             key={index}
             className="flex-1 text-white border-neutral-200 dark:border-slate-800"
-            duration={Math.floor(Math.random() * 10000 + 1000)}
+            duration={Math.floor(Math.random() * 10000 + 10000)}
           >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
               <img
@@ -35,4 +35,4 @@ const Experence = () => {
   );
 };
 
-export default Experence;
+export default Experience;

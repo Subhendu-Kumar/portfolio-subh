@@ -11,9 +11,11 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    quote: string;
-    name: string;
     title: string;
+    description: string;
+    img: string;
+    iconLists: string[];
+    link: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -87,37 +89,59 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[90vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 p-5 md:p-16 md:w-[60vw]"
+            className="w-[90vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 p-5 md:p-8 md:w-[60vw]"
             style={{
               background:
                 "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
             }}
             key={idx}
           >
-            <blockquote>
+            <div className="w-full h-auto flex lg:flex-row flex-col justify-between items-center gap-2">
               <div
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white  font-normal">
-                {item.quote}
-              </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <div className="me-3">
-                    <img src="./profile.svg" alt="profile" />
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <span className=" text-xl leading-[1.6] text-white font-bold">
-                      {item.name}
-                    </span>
-                    <span className=" text-sm leading-[1.6] text-white-200 font-normal">
-                      {item.title}
-                    </span>
-                  </div>
-                </span>
+              <div className="lg:w-[50%] w-full lg:h-80 h-auto p-2 flex-col flex items-center justify-between gap-4">
+                <div className="w-full h-auto flex flex-col justify-center gap-3">
+                  <p className="text-lg text-white font-semibold">
+                    {item.title}
+                  </p>
+                  <p className="text-sm font-semibold text-white">
+                    {item.description}
+                  </p>
+                </div>
+                <div className="w-full flex items-center gap-1">
+                  {item.iconLists &&
+                    item.iconLists.map((icon, index) => (
+                      <div
+                        key={index}
+                        className="border border-white/[0.2] rounded-full bg-black w-8 h-8 lg:w-10 lg:h-10 flex justify-center items-center"
+                        style={{ transform: `translateX(-${5 * index * 2}px)` }}
+                      >
+                        <img src={icon} alt={icon} className="p-2" />
+                      </div>
+                    ))}
+                </div>
               </div>
-            </blockquote>
+              <div className="lg:w-[50%] w-full lg:h-80 h-auto p-2 flex flex-col justify-between items-center gap-6">
+                <div className="lg:w-96 w-full border border-blue-800 rounded-lg overflow-hidden">
+                  <img
+                    src={item.img}
+                    alt={item.img}
+                    className="object-cover object-center"
+                  />
+                </div>
+                <div className="flex justify-end items-center w-full h-auto">
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    className="px-5 py-3 rounded-lg w-auto h-auto leading-none bg-white text-blue-950 text-base font-semibold"
+                  >
+                    Visit Live Site
+                  </a>
+                </div>
+              </div>
+            </div>
           </li>
         ))}
       </ul>

@@ -66,7 +66,7 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(3,2,31,1) 0%, rgba(8,5,45,1) 52%, rgba(3,24,54,1) 100%)",
       }}
     >
-      <div className={`${id === 6 && 'flex justify-center'} h-full`}>
+      <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -110,10 +110,17 @@ export const BentoGridItem = ({
           </div>
 
           {id === 2 && <GlobeDemo />}
-          {id === 3 && (
+          {id === 5 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 lg:gap-2">
-                {["React.js", "Next.js", "Express.js"].map((item) => (
+                {[
+                  'C++',
+                  "Tailwind Css",
+                  "React.js",
+                  "Next.js",
+                  "Express.js",
+                  "JavaScript",
+                ].map((item) => (
                   <span
                     key={item}
                     className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
@@ -125,7 +132,14 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 lg:gap-2">
                 <span className="py-4 px-3 text-center bg-[#10132e] rounded-lg" />
-                {["Node.js", "TypeScript", "Mongo DB"].map((item) => (
+                {[
+                  "Redux",
+                  "Html",
+                  "Node.js",
+                  "TypeScript",
+                  "Mongo DB",
+                  "Java",
+                ].map((item) => (
                   <span
                     key={item}
                     className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
