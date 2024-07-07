@@ -1,6 +1,6 @@
 import React from "react";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
-import { Allprojects, testimonials } from "@/data";
+import { Allprojects } from "@/data";
 
 const AllProjects = () => {
   return (
@@ -10,7 +10,7 @@ const AllProjects = () => {
         <InfiniteMovingCards
           items={Allprojects}
           direction="left"
-          speed="fast"
+          speed="slow"
         />
       </div>
     </div>

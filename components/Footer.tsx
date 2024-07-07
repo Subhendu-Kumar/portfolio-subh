@@ -113,6 +113,7 @@ const Footer = () => {
               key={index}
               className="cursor-pointer w-10 h-10 flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-purple rounded-full hover:scale-105 transition-transform duration-300 hover:bg-[#e1bbf0]"
               href={item.link}
+              target="_blank"
             >
               <img src={item.img} alt={item.img} width={20} height={20} />
             </a>
