@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/utils/cn";
+import Image, { StaticImageData } from "next/image";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
@@ -13,7 +14,7 @@ export const InfiniteMovingCards = ({
   items: {
     title: string;
     description: string;
-    img: string;
+    img: StaticImageData;
     iconLists: string[];
     link: string;
   }[];
@@ -118,16 +119,16 @@ export const InfiniteMovingCards = ({
                         className="border border-white/[0.2] rounded-full bg-black w-8 h-8 lg:w-10 lg:h-10 flex justify-center items-center"
                         style={{ transform: `translateX(-${5 * index * 2}px)` }}
                       >
-                        <img src={icon} alt={icon} className="p-2" />
+                        <img src={icon} alt='icon' className="p-2" />
                       </div>
                     ))}
                 </div>
               </div>
               <div className="lg:w-[50%] w-full lg:h-80 h-auto p-2 flex flex-col justify-between items-center gap-6">
                 <div className="lg:w-96 w-full border border-blue-800 rounded-lg overflow-hidden">
-                  <img
+                  <Image
                     src={item.img}
-                    alt={item.img}
+                    alt='image'
                     className="object-cover object-center"
                   />
                 </div>

@@ -1,3 +1,8 @@
+import videoVerse from "../public/video-verse.png";
+import anime from "../public/anime.png";
+import bookshelf from "../public/bookshelf.png";
+import memories from "../public/memories.png";
+
 export const navItems = [
   {
     name: "About",
@@ -22,7 +27,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/db-skd.png",
+    img: "./db-skd.png",
     spareImg: "",
   },
   {
@@ -43,7 +48,7 @@ export const gridItems = [
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
-    spareImg: "/grid.svg",
+    spareImg: "./grid.svg",
   },
   {
     id: 4,
@@ -52,8 +57,8 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
+    img: "../grid.svg",
+    spareImg: "./b4.svg",
   },
   {
     id: 5,
@@ -63,7 +68,7 @@ export const gridItems = [
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "",
-    spareImg: "/b5.svg",
+    spareImg: "./b5.svg",
   },
   {
     id: 6,
@@ -82,12 +87,12 @@ export const projects = [
     id: 1,
     title: "Memories - A Simple CRUD Application",
     des: "Discover the ease of managing data with this simple CRUD app. Create, read, update, and delete records effortlessly for a seamless user experience.",
-    img: "/memories.png",
+    img: memories,
     iconLists: [
-      "/react.svg",
-      "/tail.svg",
-      "/nodejs.svg",
-      "/js.svg",
+      "./react.svg",
+      "./tail.svg",
+      "./nodejs.svg",
+      "./js.svg",
       "mongodb.svg",
     ],
     link: "https://github.com/Subhendu-Kumar/memories-client",
@@ -96,13 +101,13 @@ export const projects = [
     id: 2,
     title: "Video Verse - Video Conferencing App",
     des: "Experience seamless communication with Video Verse, offering high-quality video and audio, screen sharing, and real-time collaboration.",
-    img: "/video-verse.png",
+    img: videoVerse,
     iconLists: [
-      "/next.svg",
-      "/tail.svg",
-      "/ts.svg",
-      "/stream.svg",
-      "/clerk.svg",
+      "./next.svg",
+      "./tail.svg",
+      "./ts.svg",
+      "./stream.svg",
+      "./clerk.svg",
     ],
     link: "https://github.com/Subhendu-Kumar/Video_Verse",
   },
@@ -110,16 +115,16 @@ export const projects = [
     id: 3,
     title: "Anime App - infinity scroll with Next.js",
     des: "Experience seamless infinite scrolling with our Anime App built on Next.js. Explore an extensive library of anime titles effortlessly, enjoying smooth and fast navigation.",
-    img: "/anime.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    img: anime,
+    iconLists: ["./next.svg", "./tail.svg", "./ts.svg"],
     link: "https://github.com/Subhendu-Kumar/infinity-scroll-anime-app",
   },
   {
     id: 4,
     title: "Personal BookShelf",
     des: "Effortlessly organize and explore your book collection. Track reading progress, get personalized recommendations, and share favorites with friends.",
-    img: "/bookshelf.png",
-    iconLists: ["/react.svg", "/tail.svg", "/js.svg"],
+    img: bookshelf,
+    iconLists: ["./react.svg", "./tail.svg", "./js.svg"],
     link: "https://github.com/Subhendu-Kumar/Personal_Bookshelf",
   },
 ];
@@ -128,12 +133,12 @@ export const Allprojects = [
     title: "Memories - A Simple CRUD Application",
     description:
       "Discover the ease of managing data with this simple CRUD app. Create, read, update, and delete records effortlessly for a seamless user experience.",
-    img: "/memories.png",
+    img: memories,
     iconLists: [
-      "/re.svg",
-      "/tail.svg",
-      "/nodejs.svg",
-      "/js.svg",
+      "./react.svg",
+      "./tail.svg",
+      "./nodejs.svg",
+      "./js.svg",
       "mongodb.svg",
     ],
     link: "https://github.com/Subhendu-Kumar/memories-client",
@@ -142,25 +147,15 @@ export const Allprojects = [
     title: "Video Verse - Video Conferencing App",
     description:
       "Simplify your video conferencing experience with Video-Verse. Seamlessly connect with colleagues and friends.",
-    img: "/video-verse.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    img: videoVerse,
+    iconLists: [
+      "./next.svg",
+      "./tail.svg",
+      "./ts.svg",
+      "./stream.svg",
+      "./clerk.svg",
+    ],
     link: "https://github.com/Subhendu-Kumar/Video_Verse",
-  },
-  {
-    title: "AI Image SaaS - Canva Application",
-    description:
-      "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
-  },
-  {
-    title: "Animated Apple Iphone 3D Website",
-    description:
-      "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
   },
 ];
 
@@ -169,27 +164,27 @@ export const workExperience = [
     id: 1,
     title: "Self Full-Stack Dev Projects",
     desc: "Built and deployed full-stack web applications, handling both frontend and backend development.",
-    thumbnail: "/exp1.svg",
+    thumbnail: "./exp1.svg",
   },
   {
     id: 2,
     title: "Freelance Dev Project",
     desc: "Designed and developed Web applications for some Clients",
-    thumbnail: "/exp2.svg",
+    thumbnail: "./exp2.svg",
   },
 ];
 
 export const socialMedia = [
   {
-    img: "/link.svg",
+    img: "./link.svg",
     link: "https://www.linkedin.com/in/subhendu-kumar-dutta/",
   },
   {
-    img: "/git.svg",
+    img: "./git.svg",
     link: "https://github.com/Subhendu-Kumar/",
   },
   {
-    img: "/twit.svg",
+    img: "./twit.svg",
     link: "https://x.com/Subhendu_330/",
   },
 ];
@@ -226,36 +221,3 @@ export const testimonials = [
     title: "Director of AlphaStream Technologies",
   },
 ];
-
-// export const companies = [
-//   {
-//     id: 1,
-//     name: "cloudinary",
-//     img: "/cloud.svg",
-//     nameImg: "/cloudName.svg",
-//   },
-//   {
-//     id: 2,
-//     name: "appwrite",
-//     img: "/app.svg",
-//     nameImg: "/appName.svg",
-//   },
-//   {
-//     id: 3,
-//     name: "HOSTINGER",
-//     img: "/host.svg",
-//     nameImg: "/hostName.svg",
-//   },
-//   {
-//     id: 4,
-//     name: "stream",
-//     img: "/s.svg",
-//     nameImg: "/streamName.svg",
-//   },
-//   {
-//     id: 5,
-//     name: "docker.",
-//     img: "/dock.svg",
-//     nameImg: "/dockerName.svg",
-//   },
-// ];
