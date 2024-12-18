@@ -316,6 +316,33 @@ export const workExperience = [
   },
 ];
 
+export const skills = [
+  "./c.svg",
+  "./java.svg",
+  "./python.svg",
+  "./html.svg",
+  "./css.svg",
+  "./js.svg",
+  "./nodejs.svg",
+  "./react.svg",
+  "./tail.svg",
+  "./ts.svg",
+  "./next.svg",
+  "./redux.svg",
+  "./mysql.svg",
+  "./mongodb.svg",
+  "./postgresql.svg",
+  "./prisma.svg",
+  "./firebase.svg",
+  "./gsap.svg",
+  "./fm.svg",
+  "./android.svg",
+  "./react-native.svg",
+  "./expo.svg",
+  "./postman.svg",
+  "./git.svg",
+];
+
 export const socialMedia = [
   {
     img: "./link.svg",

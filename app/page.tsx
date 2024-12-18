@@ -6,6 +6,7 @@ import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import AllProjectsNew from "@/components/AllProjectsNew";
 import { FloatingNav } from "@/components/ui/FloatingNav";
+import AllSkills from "@/components/AllSkills";
 
 // import AllProjects from "@/components/AllProjects";
 // import RecentProjects from "@/components/RecentProjects";
@@ -17,6 +18,7 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
+        <AllSkills />
         <Experience />
         {/* <RecentProjects /> */}
         {/* <AllProjects /> */}
