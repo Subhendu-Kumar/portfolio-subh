@@ -241,14 +241,14 @@ export const Allprojects = [
 export const workExperience = [
   {
     id: 1,
-    title: "Self Full-Stack Dev Projects",
-    desc: "Built and deployed full-stack web applications, handling both frontend and backend development.",
+    title: "SDE Intern @Kidjig Technologies",
+    desc: "Software Development Intern at Kidjig Technologies: Full-stack development, building scalable web applications, enhancing user experiences, and solving technical challenges.",
     thumbnail: "./exp1.svg",
   },
   {
     id: 2,
-    title: "Freelance Dev Project",
-    desc: "Designed and developed Web applications for some Clients",
+    title: "Self Full-Stack Projects",
+    desc: "Built and deployed full-stack web applications, handling both frontend and backend development.",
     thumbnail: "./exp2.svg",
   },
 ];

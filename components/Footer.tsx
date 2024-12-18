@@ -46,7 +46,7 @@ const Footer = () => {
           onSubmit={sendEmail}
         >
           <div
-            className="flex items-center flex-col justify-center w-[60vw] max-sm:w-full px-20 py-10 max-sm:px-4 max-sm:py-6 rounded-xl p-4 gap-4 border border-zinc-700"
+            className="flex items-center flex-col justify-center w-[60vw] max-sm:w-full px-20 py-10 max-sm:px-4 max-sm:py-6 rounded-lg p-4 gap-4 border border-zinc-700"
             style={{
               background: "rgb(3,2,31)",
               backgroundColor:
@@ -55,7 +55,7 @@ const Footer = () => {
           >
             <div className="w-full flex justify-center items-center gap-4 max-sm:flex-col">
               <div className="w-[50%] max-sm:w-full flex flex-col gap-1">
-                <p className="text-lg max-sm:text-sm font-semibold text-white-200">
+                <p className="text-base max-sm:text-sm font-semibold text-white-200">
                   Full Name:<span className="text-red-600"> *</span>
                 </p>
                 <input
@@ -63,11 +63,11 @@ const Footer = () => {
                   name="name"
                   placeholder="Enter your full name"
                   required
-                  className="w-full h-16 rounded-xl px-6 max-sm:px-2 text-base max-sm:text-xs focus:outline-none focus:ring-0 border border-zinc-700 bg-blue-950"
+                  className="w-full h-10 rounded-md px-3 max-sm:px-2 text-base max-sm:text-xs focus:outline-none focus:ring-0 border border-zinc-700 bg-blue-950 placeholder:text-sm"
                 />
               </div>
               <div className="w-[50%] max-sm:w-full flex flex-col gap-1">
-                <p className="text-lg max-sm:text-sm font-semibold text-white-200">
+                <p className="text-base max-sm:text-sm font-semibold text-white-200">
                   Email:<span className="text-red-600"> *</span>
                 </p>
                 <input
@@ -75,19 +75,19 @@ const Footer = () => {
                   name="email"
                   placeholder="Your Email"
                   required
-                  className="w-full h-16 bg-blue-950 rounded-xl px-6 max-sm:px-2 text-base max-sm:text-xs focus:outline-none focus:ring-0 border border-zinc-700"
+                  className="w-full h-10 bg-blue-950 rounded-md px-3 max-sm:px-2 text-base max-sm:text-xs focus:outline-none focus:ring-0 border border-zinc-700 placeholder:text-sm"
                 />
               </div>
             </div>
             <div className="w-full flex flex-col gap-1">
-              <p className="text-lg max-sm:text-sm font-semibold text-white-200">
+              <p className="text-base max-sm:text-sm font-semibold text-white-200">
                 Subject:<span className="text-red-600"> *</span>
               </p>
               <textarea
                 name="message"
                 placeholder="Your Message"
                 required
-                className="w-full h-24 bg-blue-950 rounded-xl p-4 max-sm:px-2 text-base max-sm:text-xs focus:outline-none focus:ring-0 border border-zinc-700"
+                className="w-full min-h-20 bg-blue-950 rounded-md p-3 placeholder:text-sm max-sm:px-2 text-base max-sm:text-xs focus:outline-none focus:ring-0 border border-zinc-700"
               />
             </div>
             <button

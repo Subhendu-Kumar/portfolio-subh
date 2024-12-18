@@ -1,12 +1,14 @@
-import AllProjects from "@/components/AllProjects";
-import Approach from "@/components/Approach";
-import Experience from "@/components/Experience";
-import Footer from "@/components/Footer";
+import { navItems } from "@/data";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
-import RecentProjects from "@/components/RecentProjects";
+import Footer from "@/components/Footer";
+import Approach from "@/components/Approach";
+import Experience from "@/components/Experience";
+import AllProjectsNew from "@/components/AllProjectsNew";
 import { FloatingNav } from "@/components/ui/FloatingNav";
-import { navItems } from "@/data";
+
+// import AllProjects from "@/components/AllProjects";
+// import RecentProjects from "@/components/RecentProjects";
 
 export default function Home() {
   return (
@@ -15,9 +17,10 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
-        <RecentProjects />
-        <AllProjects />
         <Experience />
+        {/* <RecentProjects /> */}
+        {/* <AllProjects /> */}
+        <AllProjectsNew />
         <Approach />
         <Footer />
       </div>

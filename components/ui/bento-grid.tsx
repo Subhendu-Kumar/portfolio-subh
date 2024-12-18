@@ -78,7 +78,7 @@ export const BentoGridItem = ({
         </div>
         <div
           className={`absolute right-0 -bottom-5 ${
-            id === 5 && "w-full opacity-80"
+            id === 5 && "w-full opacity-50"
           }`}
         >
           {spareImg && (
@@ -123,7 +123,7 @@ export const BentoGridItem = ({
                 ].map((item) => (
                   <span
                     key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
                   >
                     {item}
                   </span>
