@@ -1,6 +1,7 @@
 import Image from "next/image";
 import image from "../public/video-verse.png";
 import { Allprojects } from "@/data";
+import CustomImage from "./CustomImage";
 
 const AllProjectsNew = () => {
   return (
@@ -14,11 +15,7 @@ const AllProjectsNew = () => {
               className="w-full h-auto p-3 border border-white/[0.2] rounded-lg flex flex-col items-start justify-between bg-blue-950"
             >
               <div className="w-full h-52 rounded-md border border-gray-400 overflow-hidden">
-                <Image
-                  src={data.img}
-                  alt="helo"
-                  className="w-full h-full object-cover object-center"
-                />
+                <CustomImage src={data.img} hash={data.hash} />
               </div>
               <div className="w-full h-auto mt-3 flex flex-col items-start justify-start">
                 <p className="text-xl font-semibold font-sans">{data.title}</p>
