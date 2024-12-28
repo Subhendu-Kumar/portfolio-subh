@@ -26,6 +26,10 @@ const config = {
       },
     },
     extend: {
+      rotate: {
+        15: "15deg",
+        20: "20deg",
+      },
       colors: {
         black: {
           DEFAULT: "#000",
@@ -164,7 +168,7 @@ const config = {
   },
   plugins: [
     require("tailwindcss-animate"),
-    require('@tailwindcss/aspect-ratio'),
+    require("@tailwindcss/aspect-ratio"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
