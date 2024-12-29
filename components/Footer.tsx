@@ -10,7 +10,6 @@ const Footer = () => {
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     emailjs
       .sendForm("service_2zpidkv", "template_39yxa5u", form.current!, {
         publicKey: "wqQIfnTRanDOgd-I7",
@@ -26,6 +25,7 @@ const Footer = () => {
         }
       );
   };
+  
   return (
     <footer className="w-full pt-10 pb-4" id="contact">
       <div className="flex flex-col items-center">

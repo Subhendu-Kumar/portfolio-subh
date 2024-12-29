@@ -12,7 +12,7 @@ const AllProjectsNew = () => {
           return (
             <div
               key={idx}
-              className="w-full hover:scale-105 transition-all duration-300 ease-in-out h-auto p-3 border border-white/[0.2] rounded-lg flex flex-col items-start justify-between bg-blue-950"
+              className="w-full cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out h-auto p-3 border border-white/[0.2] rounded-lg flex flex-col items-start justify-between bg-blue-950"
             >
               <div className="w-full h-52 rounded-md border border-gray-400 overflow-hidden">
                 <CustomImage src={data.img} hash={data.hash} />

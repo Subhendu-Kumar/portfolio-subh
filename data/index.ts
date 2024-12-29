@@ -1,17 +1,16 @@
-import videoverse from "../public/video-verse.png";
+import sps from "../public/sps.png";
+import drag from "../public/drag.png";
+import pixo from "../public/pixo.jpg";
 import anime from "../public/anime.png";
-import bookshelf from "../public/bookshelf.png";
-import memories from "../public/memories.png";
+import clock from "../public/clock.png";
 import snake from "../public/snake.png";
 import tictac from "../public/tictac.png";
-import hangman from "../public/hangman.png";
 import pacman from "../public/pacman.png";
-import clock from "../public/clock.png";
-import drag from "../public/drag.png";
-import sps from "../public/sps.png";
-import survey from "../public/surveyapp.png";
 import math from "../public/math-draw.png";
-import pixo from "../public/pixo.jpg";
+import hangman from "../public/hangman.png";
+import survey from "../public/surveyapp.png";
+import memories from "../public/memories.png";
+import videoverse from "../public/video-verse.png";
 
 export const navItems = [
   {
@@ -129,14 +128,6 @@ export const projects = [
     iconLists: ["./next.svg", "./tail.svg", "./ts.svg"],
     link: "https://github.com/Subhendu-Kumar/infinity-scroll-anime-app",
   },
-  {
-    id: 4,
-    title: "Personal BookShelf",
-    des: "Effortlessly organize and explore your book collection. Track reading progress, get personalized recommendations, and share favorites with friends.",
-    img: bookshelf,
-    iconLists: ["./react.svg", "./tail.svg", "./js.svg"],
-    link: "https://github.com/Subhendu-Kumar/Personal_Bookshelf",
-  },
 ];
 
 export const Allprojects = [
@@ -200,7 +191,7 @@ export const Allprojects = [
       "./js.svg",
       "mongodb.svg",
     ],
-    link: "https://memories-client-subhendu.vercel.app/",
+    link: "https://github.com/Subhendu-Kumar/memories-client",
     hash: "eIOWv@]|%z.89H4qt1%LoLW.PEpdMwV?-ntnx]M{awxZD$jD-pkDRQ",
   },
   {
@@ -215,7 +206,7 @@ export const Allprojects = [
       "./stream.svg",
       "./clerk.svg",
     ],
-    link: "https://video-verse-subhendu.vercel.app/",
+    link: "https://github.com/Subhendu-Kumar/Video_Verse",
     hash: "e9CiI201p;0G~S0L^,$q^WJ==fSPNFT2V=vyo|Rhb{RO0w-mrs-MNK",
   },
   {
@@ -224,7 +215,7 @@ export const Allprojects = [
       "Experience seamless infinite scrolling with our Anime App built on Next.js. Explore an extensive library of anime titles effortlessly, enjoying smooth and fast navigation.",
     img: anime,
     iconLists: ["./next.svg", "./tail.svg", "./ts.svg"],
-    link: "https://infinity-scroll-anime-app-subh.vercel.app/",
+    link: "https://github.com/Subhendu-Kumar/infinity-scroll-anime-app",
     hash: "e6Ee}vsE^%57%0rV9c?FE3sQW7NyMv%3-;0MD*kXw]Rj~q-QIooJS5",
   },
   {
@@ -236,15 +227,6 @@ export const Allprojects = [
     link: "https://draggable-cards-subhendu.netlify.app/",
     hash: "e37wysIVIBIo610KxutkxH+zDgo#s=o#O=_4RjNFRjRiJCofban$w0",
   },
-  // {
-  //   title: "Personal BookShelf",
-  //   description:
-  //     "Effortlessly organize and explore your book collection. Track reading progress, get personalized recommendations, and share favorites with friends.",
-  //   img: bookshelf,
-  //   iconLists: ["./react.svg", "./tail.svg", "./js.svg"],
-  //   link: "https://personal-bookshelf-subh.vercel.app/",
-  //   hash: "eXMHS{offPxaj[~pWBWCazay^*WBayazfQWFWBayj[fQNFayazj[fQ",
-  // },
   {
     title: "Classic Snake Game",
     description:
